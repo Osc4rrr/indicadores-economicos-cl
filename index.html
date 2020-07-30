@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/812278ec98.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/indicadores-economicos-cl/index.css">
+
+    
+    <title>Indicadores Economicos</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3"></div>
+
+      <div class="col-lg-6 my-5">
+        <div class="row ">
+          <div class="col-lg-12 border-bottom p-4">
+            <h1 class="title my-3  animated fadeIn">INDICADORES ECONOMICOS CHILE <span><i class="fas fa-coins"></i></span></h1>
+          </div>
+
+          <div class="col-lg-12 my-3 border-bottom pb-3">
+            <select class="custom-select custom-select-sm select-indicador  animated fadeIn">
+              <option selected>Escoge un indicador</option>
+            </select>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <h3 class="price my-5  animated fadeIn"></h3>
+          </div>
+
+          <div class="col-lg-6  text-center icon-box">
+            <i class="fas fa-chart-line animated fadeIn"></i>
+          </div>
+
+          <div class="col-lg-12 text-center">
+            <h1 class="price-title  animated fadeIn"></h1>
+          </div>
+
+          <div class="col-lg-12 my-3 border-bottom date_c">
+            <p class="font-weight-light fecha_indicador"></p>
+          </div>
+
+          <div class="col-lg-12"> 
+            <div class="row">
+
+              <div class="col-lg-12 my-3 date_s">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h6>Escoge una fecha</h6>
+                  </div>
+
+                  <div class="col-lg-6 bg text-center">
+                    <input type="date" class="form-control" onchange="traerFecha(event);">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <p class="selected_date animated fadeIn"></p>
+              </div>
+
+              <div class="col-lg-6">
+                <p class="selected_price"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 my-5 chart-bg">
+            
+          </div>
+
+          <div class="col-lg-12 history">
+            <h4 class="font-weight-light">Historial</h4>
+            <small>Ultimos 31 Resultados</small>
+
+            <div class="row mt-4">
+              <div class="col-lg-6">
+                <ul class="lista_historial bg-alert">
+                  
+                </ul>
+              </div>
+  
+              <div class="col-lg-6">
+                <ul class="lista_historial_2">
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
+  
+    
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+      <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
+      <script src="/indicadores-economicos-cl/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+.title{
+    font-family: 'Sora', sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    text-align: center;
+    background-color: white;
+}
+
+.title > span > i{
+    font-size: 35px;
+    padding:15px;
+    color:rgba(0, 0, 0, 0.6);
+    background-color: white;
+}
+
+
+.price{
+    position: relative;
+    font-family: 'Anton', sans-serif;
+    font-size: 3.2em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.icon-box{
+    position: relative;
+    background-color: white;
+    text-align: center;
+    font-size: 5em;
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+}
+
+.date_s, .history, .date_c{
+    visibility: hidden;
+}
+
+.showme{
+    visibility: visible;
+}
+
+.price-title{
+    font-family: 'Anton', sans-serif;
+    color: rgb(60, 179, 113, .9);
+}
+
+ul {
+    list-style: none;
+    left:0px;
+}
+
+ul li{
+    position: relative;
+    margin: 0px;
+    left:0px;
+}
+
+
+
+
+/*Animaciones*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+
+
